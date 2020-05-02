@@ -1,0 +1,96 @@
+body {
+    background-color: #000;
+}
+
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+  margin: 0.5em auto;
+}
+
+.entryLink {
+  color: #fff;
+  opacity: 1;
+}
+
+
+.entryLink:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.entryLink:focus {
+  color: #fff;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: none;
+}
+
+.entryLink:visited {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/1a/08/d9/91/salle-du-restaurant.jpghttps://media-cdn.tripadvisor.com/media/photo-s/1a/08/d9/91/salle-du-restaurant.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://dcist.com/wp-content/uploads/sites/3/2020/03/200316_DC_empty_restaurants_Turner_02-1500x1000.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-01/lower-patio.jpg?itok=KGYP49fO);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/1a/08/d9/91/salle-du-restaurant.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2017/8/0/CI_Juniors-49thBroadwayInterior.jpg.rend.hgtvcom.616.462.suffix/1501638474622.jpeg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

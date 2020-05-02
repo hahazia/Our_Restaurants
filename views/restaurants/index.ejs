@@ -1,0 +1,41 @@
+<% include ../partials/header %> 
+
+     <header class="jumbotron">
+         <div class="container">
+             <h1><span class="glyphicon glyphicon-tent"></span> Welcome To Our Restaurants!</h1>
+             <p>Find the restaurants you like!</p>
+              <p>
+              <form action="/restaurants" method="GET" class="form-inline" id="restaurants-search">
+                <div class="form-group">
+                  <input type="text" name="search" placeholder="Search restaurants.." class="form-control">
+                  <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </form>
+                <hr>
+                <a class="pull-right" href="/restaurants/new">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                Share New Restaurants!
+                </a>
+             </p>
+         </div>
+     </header>
+     
+     <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% restaurants.forEach(restaurant => {%>
+          <div class="col-md-3 col-sm-6">
+            <div class="thumbnail card">
+              <img class="restaurant__image" src="<%= restaurant.image %>" alt="<%= restaurant.name %>" />
+              <div class="caption">
+                <h4 class="caption"><%= restaurant.name %></h4>
+              </div>
+              <p>
+                <a class="btn btn-primary btn-sm btn-b-mg" href="/restaurants/<%= restaurant._id %>">
+                  More Info
+                </a>
+              </p>
+            </div>
+          </div>
+        <% })%>
+    </div>
+
+<% include ../partials/footer %>
