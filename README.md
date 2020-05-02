@@ -1,15 +1,7 @@
-# YelpCamp!
-
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Known Vulnerabilities](https://snyk.io/test/github/zeztron/yelpcamp/badge.svg)](https://snyk.io/test/github/zeztron/yelpcamp)
-
-
-> A web application project from the Udemy course - [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/)
-
-<img width="1096" alt="screen shot 2018-10-26 at 9 56 34 pm" src="https://user-images.githubusercontent.com/41349472/47598483-35f7e780-d96a-11e8-98e3-53f2c6bdf20b.png">
 
 ## Live Demo
 
-To see the app in action, go to [https://yelp-camp-hp.herokuapp.com/](https://yelp-camp-hp.herokuapp.com/)
+To see the app in action, go to (https://ourrestaurants.herokuapp.com)
 
 ## Features
 
